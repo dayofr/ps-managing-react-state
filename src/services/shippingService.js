@@ -1,4 +1,4 @@
-const baseUrl = process.env.REACT_APP_API_BASE_URL;
+const baseUrl = import.meta.env.VITE_REACT_APP_API_BASE_URL;
 
 export async function getShippingAddress(userId) {
   return fetch(baseUrl + "shippingAddress/" + userId).then((response) => {
